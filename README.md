@@ -15,6 +15,6 @@ If no dataset is specified fruit-gan uses the custom dataloader (custom_dataload
 Already trained model with mnist, custom dataloader for 4 fruits and custom dataloader for 5 fruits is in *saved_models* folder.
 To test already trained model execute inference.py and specify the generator weights' directory in *saved_models* .
 
-## Treining examples
+## Training examples
   
-![](gif\rgb_fruit.gif)
+![Alt text](gif\rgb_fruit.gif)
