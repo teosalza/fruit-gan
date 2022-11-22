@@ -18,3 +18,13 @@ To test already trained model execute inference.py and specify the generator wei
 ## Training examples
   
 ![Alt text](rgb_fruit.gif)
+5 fruit rgb after 400 epoch
+
+![Alt text](brgfruit.gif)
+4 fruit rgb after 200 epoch
+
+![Alt text](mnist.gif)
+MNIST after 200 epoch
+
+
+
