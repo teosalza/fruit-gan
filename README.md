@@ -17,4 +17,4 @@ To test already trained model execute inference.py and specify the generator wei
 
 ## Training examples
   
-![Alt text](gif\rgb_fruit.gif)
+![Alt text](rgb_fruit.gif)
