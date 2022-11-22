@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args":["--cuda","False","--train","True","--classes","5","--channels","1","--batch_size","8","--epochs","200","--lr","0.0002"]
+            "args":["--cuda","False","--train","True","--classes","10","--channels","1","--batch_size","32","--epochs","200","--lr","0.0002"]
         }
     ]
 }

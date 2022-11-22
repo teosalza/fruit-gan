@@ -1,4 +1,3 @@
-from utils import *
 import matplotlib.pyplot as plt
 import numpy as np
 import torch.nn as nn
@@ -99,14 +98,14 @@ class   Model(object):
 
             #end epoch save the model
             if epoch % 10 == 0:
-                torch.save(self.netG.state_dict(), os.path.join("fuit-gan\\saved_models",
+                torch.save(self.netG.state_dict(), os.path.join("saved_models",
                             'netG_{}.pth'.format(epoch)))
-                torch.save(self.netD.state_dict(), os.path.join("fuit-gan\\saved_models",
+                torch.save(self.netD.state_dict(), os.path.join("saved_models",
                             'netD_{}.pth'.format(epoch)))                             
             # self.save_to(path=out_dir, name=self.name, verbose=False)
-        torch.save(self.netG.state_dict(), os.path.join("fuit-gan\\saved_models",
+        torch.save(self.netG.state_dict(), os.path.join("saved_models",
                             'netG_final.pth'))
-        torch.save(self.netD.state_dict(), os.path.join("fuit-gan\\saved_models",
+        torch.save(self.netD.state_dict(), os.path.join("saved_models",
                             'netD_final.pth'))        
 
 

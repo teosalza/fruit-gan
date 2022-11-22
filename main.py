@@ -1,4 +1,3 @@
-from utils import *
 import torch
 import sys
 from torchvision import transforms
@@ -9,7 +8,7 @@ import argparse
 from torch.utils.data import TensorDataset, DataLoader
 from custom_dataloader import *
 
-dataset_directory = "fuit-gan/dataset/fruits-360_dataset/fruits-360/Training/"
+dataset_directory = "dataset/fruits-360_dataset/fruits-360/Training/"
 train = []
 
 FLAGS = None
@@ -18,18 +17,19 @@ FLAGS = None
 
 def main():
     device = torch.device("cuda:0" if FLAGS.cuda else "cpu")
-    # device = "cpu"
     if FLAGS.train:
         print("Loading data...\n")
 
-        dataset = CustomDataset()
+        #Fruit dataset with 5 different fruit
+        # dataset = CustomDataset()
      
-        # dataset = dset.MNIST(root=FLAGS.data_dir, download=True,
-        # transform=transforms.Compose([
-        # transforms.Resize(FLAGS.img_size),
-        # transforms.ToTensor(),
-        # transforms.Normalize((0.5,), (0.5,))
-        # ]))
+        #MNist dataset for testing 
+        dataset = dset.MNIST(root=FLAGS.data_dir, download=True,
+        transform=transforms.Compose([
+        transforms.Resize(FLAGS.img_size),
+        transforms.ToTensor(),
+        transforms.Normalize((0.5,), (0.5,))
+        ]))
         assert dataset
 
         dataloader = torch.utils.data.DataLoader(dataset,
@@ -56,8 +56,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Fruit Gan')
     parser.add_argument('--cuda', type=bool, default=False,help='enable CUDA.')
     parser.add_argument('--train', type=bool, default=True,help='train mode or eval mode.')
-    parser.add_argument('--data_dir', type=str, default='fuit-gan/dataset/fruits-360_dataset/fruits-360/Test/',help='Directory for dataset.')
-    parser.add_argument('--out_dir', type=str, default='fuit-gan\\output',help='Directory for output.')
+    parser.add_argument('--data_dir', type=str, default='dataset',help='Directory for dataset.')
+    parser.add_argument('--out_dir', type=str, default='output',help='Directory for output.')
     parser.add_argument('--epochs', type=int, default=10, help='number of epochs')
     parser.add_argument('--batch_size', type=int, default=32, help='sizeof batches')
     parser.add_argument('--lr', type=float, default=0.0002, help='learning rate')

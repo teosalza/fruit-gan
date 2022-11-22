@@ -6,7 +6,7 @@ import cv2
 import os
 import torch
 
-dataset_directory = "fuit-gan/dataset/fruits-360_dataset/fruits-360/divided_training/"
+dataset_directory = "dataset/fruits-360_dataset/fruits-360/divided_training/"
 
 
 class CustomDataset(Dataset):
