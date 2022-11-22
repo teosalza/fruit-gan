@@ -13,5 +13,8 @@ Usage : main.py --cuda [bool] --train [bool] --data_dir [directory_of_dataset] -
 If no dataset is specified fruit-gan uses the custom dataloader (custom_dataloader.py) to train on dataset\360-fruit_dataset\fruits-360\divided_training.
   
 Already trained model with mnist, custom dataloader for 4 fruits and custom dataloader for 5 fruits is in *saved_models* folder.
+To test already trained model execute inference.py and specify the generator weights' directory in *saved_models* .
+
+## Treining examples
   
  
