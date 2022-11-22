@@ -6,7 +6,7 @@
 - 1.avocado
 - 2.grape
 - 3.onion
-- 4.pinepple
+- 4.pinapple
 
 Usage : main.py --cuda [bool] --train [bool] --data_dir [directory_of_dataset] --out_dir [directory_of_output] --epoch [int] --batch_size [int] --lr [learning_rate] --latent_dim [dimension_random_Z_vector] --classes [nr_classes_to_generate] --channels [nr_rgb_channel] --log_inteval [to_sample_training_progresses]  --seed [random_seed]
   
@@ -17,4 +17,4 @@ To test already trained model execute inference.py and specify the generator wei
 
 ## Treining examples
   
- 
+![](gif\rgb_fruit.gif)
