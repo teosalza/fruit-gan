@@ -20,7 +20,7 @@ To test already trained model execute inference.py and specify the generator wei
 ![Alt text](rgb_fruit.gif)
 5 fruit rgb after 400 epoch
 
-![Alt text](brgfruit.gif)
+![Alt text](brg_fruit.gif)
 4 fruit rgb after 200 epoch
 
 ![Alt text](mnist.gif)
